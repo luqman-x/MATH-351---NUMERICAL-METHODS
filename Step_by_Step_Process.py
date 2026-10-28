@@ -1,4 +1,3 @@
-
 import numpy as np
 
 def naive_gaussian_elimination(A, B):
@@ -28,9 +27,9 @@ def naive_gaussian_elimination(A, B):
             left = "  ".join(f"{A[i][j]:10.4f}" for j in range(n))
             print(f"[ {left} | {B[i]:10.4f} ]")
 
-    # --------------------------------------------------
-    # STEP 2: FORWARD ELIMINATION
-    # --------------------------------------------------
+
+    # FORWARD ELIMINATION
+
     print("\nSTEP 2: FORWARD ELIMINATION")
     print("-" * 65)
 
@@ -89,9 +88,9 @@ def naive_gaussian_elimination(A, B):
     print("\nUpper triangular system:")
     display_matrix()
 
-    # --------------------------------------------------
-    # STEP 3: BACK SUBSTITUTION
-    # --------------------------------------------------
+   
+    # BACK SUBSTITUTION
+  
     print("\nSTEP 3: BACK SUBSTITUTION")
     print("-" * 65)
 
@@ -125,9 +124,9 @@ def naive_gaussian_elimination(A, B):
 
         print(f"  Therefore, x{i+1} = {X[i]:.6f}")
 
-    # --------------------------------------------------
-    # STEP 4: FINAL SOLUTION
-    # --------------------------------------------------
+   
+    # FINAL SOLUTION
+   
     print("\nSTEP 4: FINAL SOLUTION")
     print("-" * 65)
 
