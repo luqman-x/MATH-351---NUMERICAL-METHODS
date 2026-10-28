@@ -16,11 +16,11 @@ def gaussian_elimination_partial_pivoting(A, B):
             row = "  ".join(f"{A[i, j]:9.4f}" for j in range(n))
             print(f"[ {row} | {B[i]:9.4f} ]")
 
-    print("=" * 10)
+  
     print(" GAUSSIAN ELIMINATION WITH PARTIAL PIVOTING")
-    print("=" * 10)
+    
 
-    print("\nSTEP 1: ORIGINAL AUGMENTED MATRIX [A | B]")
+    print("\nORIGINAL AUGMENTED MATRIX [A | B]")
     display_matrix()
 
     
@@ -95,7 +95,7 @@ def gaussian_elimination_partial_pivoting(A, B):
    
     # STEP 3: BACK SUBSTITUTION
 
-    print("\nSTEP 3: BACK SUBSTITUTION")
+    print("\nBACK SUBSTITUTION")
 
     X = np.zeros(n)
 
