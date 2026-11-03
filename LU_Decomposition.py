@@ -19,9 +19,9 @@ def lu_decomposition(A, B):
     U = A.copy()
     P = np.eye(n)
 
-    print("=" * 65)
+    print("=" * 10)
     print("       LU DECOMPOSITION WITH PARTIAL PIVOTING")
-    print("=" * 65)
+    print("=" * 10)
 
     def display(M, name):
         print(f"\n{name} =")
@@ -34,12 +34,11 @@ def lu_decomposition(A, B):
     display(A, "Original Matrix A")
     display(B.reshape(-1, 1), "Vector B")
 
-    # ------------------------------------------------
+
     # STEP 1: LU DECOMPOSITION
-    # ------------------------------------------------
 
     print("\nSTEP 1: LU DECOMPOSITION")
-    print("-" * 65)
+    print("-" * 10)
 
     for k in range(n):
 
@@ -93,10 +92,9 @@ def lu_decomposition(A, B):
             display(L, "Current L")
             display(U, "Current U")
 
-    # ------------------------------------------------
+ 
     # STEP 2: VERIFY PA = LU
     # ------------------------------------------------
-
     print("\nSTEP 2: VERIFY LU DECOMPOSITION")
     print("-" * 65)
 
