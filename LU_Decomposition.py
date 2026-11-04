@@ -94,7 +94,7 @@ def lu_decomposition(A, B):
 
  
     # STEP 2: VERIFY PA = LU
-    # ------------------------------------------------
+   
     print("\nSTEP 2: VERIFY LU DECOMPOSITION")
     print("-" * 65)
 
@@ -112,12 +112,12 @@ def lu_decomposition(A, B):
     else:
         raise ArithmeticError("LU decomposition verification failed.")
 
-    # ------------------------------------------------
+   
     # STEP 3: FORWARD SUBSTITUTION
-    # ------------------------------------------------
+
 
     print("\nSTEP 3: FORWARD SUBSTITUTION")
-    print("-" * 65)
+    print("-" * 10)
 
     PB = P @ B_original
 
@@ -145,12 +145,11 @@ def lu_decomposition(A, B):
 
     display(Y.reshape(-1, 1), "Solution Vector Y")
 
-    # ------------------------------------------------
+ 
     # STEP 4: BACKWARD SUBSTITUTION
-    # ------------------------------------------------
 
     print("\nSTEP 4: BACKWARD SUBSTITUTION")
-    print("-" * 65)
+    print("-" * 10)
 
     X = np.zeros(n)
 
@@ -172,30 +171,29 @@ def lu_decomposition(A, B):
 
         print(f"X{i+1} = {X[i]:.6f}")
 
-    # ------------------------------------------------
+   
     # STEP 5: FINAL SOLUTION
-    # ------------------------------------------------
+
 
     print("\nSTEP 5: FINAL SOLUTION")
-    print("-" * 65)
+    print("-" * 10)
 
     for i in range(n):
         print(f"X{i+1} = {X[i]:.6f}")
 
-    print("\n" + "=" * 65)
+    print("\n" + "=" * 10)
     print("LU DECOMPOSITION COMPLETED SUCCESSFULLY")
-    print("=" * 65)
+    print("=" * 10)
 
     return X
 
 
-# -----------------------------------------------
 # EXAMPLE PROBLEM
-#
+
 # y + 2z = 5
 # 2x + 3y + z = 10
 # 4x + y + 3z = 13
-# -----------------------------------------------
+
 
 A = np.array([
     [0, 1, 2],
