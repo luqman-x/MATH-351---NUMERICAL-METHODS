@@ -19,9 +19,9 @@ def lu_decomposition(A, B):
     U = A.copy()
     P = np.eye(n)
 
-    print("=" * 10)
-    print("       LU DECOMPOSITION WITH PARTIAL PIVOTING")
-    print("=" * 10)
+    
+    print("LU DECOMPOSITION WITH PARTIAL PIVOTING")
+  
 
     def display(M, name):
         print(f"\n{name} =")
@@ -38,7 +38,7 @@ def lu_decomposition(A, B):
     # STEP 1: LU DECOMPOSITION
 
     print("\nSTEP 1: LU DECOMPOSITION")
-    print("-" * 10)
+   
 
     for k in range(n):
 
@@ -96,7 +96,7 @@ def lu_decomposition(A, B):
     # STEP 2: VERIFY PA = LU
    
     print("\nSTEP 2: VERIFY LU DECOMPOSITION")
-    print("-" * 65)
+    
 
     display(P, "Permutation Matrix P")
     display(L, "Lower Triangular Matrix L")
@@ -115,9 +115,8 @@ def lu_decomposition(A, B):
    
     # STEP 3: FORWARD SUBSTITUTION
 
-
     print("\nSTEP 3: FORWARD SUBSTITUTION")
-    print("-" * 10)
+   
 
     PB = P @ B_original
 
@@ -149,7 +148,7 @@ def lu_decomposition(A, B):
     # STEP 4: BACKWARD SUBSTITUTION
 
     print("\nSTEP 4: BACKWARD SUBSTITUTION")
-    print("-" * 10)
+  
 
     X = np.zeros(n)
 
@@ -176,15 +175,13 @@ def lu_decomposition(A, B):
 
 
     print("\nSTEP 5: FINAL SOLUTION")
-    print("-" * 10)
+
 
     for i in range(n):
         print(f"X{i+1} = {X[i]:.6f}")
 
-    print("\n" + "=" * 10)
+  
     print("LU DECOMPOSITION COMPLETED SUCCESSFULLY")
-    print("=" * 10)
-
     return X
 
 
