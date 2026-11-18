@@ -269,9 +269,8 @@ x^{(5)}
 =
 \frac{19}{12}
 \left(\frac{1-(1/12)^2}{1-1/12}\right)
-
-- \left(\frac1{12}\right)^2\frac94
-  $$
++ \left(\frac1{12}\right)^2\frac94
+$$
 
 Therefore:
 
@@ -322,21 +321,13 @@ The fifth iteration is obtained without sequentially calculating iterations two,
 For a two-variable Jacobi system:
 
 1. Rearrange both equations into Jacobi form.
-2. Identify $p,q,r,s$.
-3. Calculate:
-
-   $$
-   A=p+qr,\qquad B=qs
-   $$
+2. Identify $p$, $q$, $r$, and $s$.
+3. Calculate $A=p+qr$ and $B=qs$.
 
 4. Calculate the first iteration.
 5. Determine whether the required iteration is even or odd.
 6. Apply the corresponding direct formula.
-7. Calculate the other variable using:
-
-   $$
-   y^{(n)}=r+sx^{(n-1)}
-   $$
+7. Calculate the other variable using $y^{(n)}=r+sx^{(n-1)}$.
 
 ## 7. Advantages
 
