@@ -265,11 +265,7 @@ $$
 Substituting:
 
 $$
-x^{(5)}
-=
-\frac{19}{12}
-\left(\frac{1-(1/12)^2}{1-1/12}\right)
-+ \left(\frac1{12}\right)^2\frac94
+x^{(5)} = \frac{19}{12}\left(\frac{1-(1/12)^2}{1-1/12}\right) + \left(\frac1{12}\right)^2\frac94
 $$
 
 Therefore:
